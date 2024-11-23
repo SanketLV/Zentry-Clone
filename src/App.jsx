@@ -1,9 +1,12 @@
-import React from 'react';
+import Hero from "./components/Hero";
 
-const app = ( ) => {
-    return <main>
-        <h1 className="text-5xl text-violet-300">Welcome to Awwwards</h1>
+const app = () => {
+  return (
+    <main className="relative min-h-screen w-screen overflow-x-hidden">
+      <Hero />
+      <section className="z-0 min-h-screen bg-blue-500" />
     </main>
-}
+  );
+};
 
-export default app
+export default app;
